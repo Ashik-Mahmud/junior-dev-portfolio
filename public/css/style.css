@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 /*========== site variables =========== */
-:root{
+:root {
     /* fonts collection  */
-    --poppins:'Poppins', sans-serif;
+    --poppins: 'Poppins', sans-serif;
     /* colors  */
     --primary-color: #273c75;
     --text-dark: #333;
@@ -22,23 +22,26 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: var(--poppins);
     font-size: 16px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-button{
+
+button {
     cursor: pointer;
 }
-img{
+
+img {
     max-width: 100%;
     height: auto;
 }
 
 /*============== common classes ================ */
-.container{
+.container {
     max-width: 1170px;
     margin: auto;
 }
@@ -47,48 +50,57 @@ img{
 
 
 /*================= Navbar Area Start Here ============== */
-nav{
+nav {
     position: relative;
     padding: 1.5rem 0rem;
 }
-.navbar{
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
-.navbar .navbar__logo{
+
+.navbar .navbar__logo {
     font-size: 1.3rem;
     color: var(--primary-color);
 }
-.navbar .toggle-theme-btn{
+
+.navbar .toggle-theme-btn {
     font-size: 1.4rem;
     color: var(--primary-color);
 }
+
 /*================= Navbar Area End Here ============== */
 
 /*================ Hero Area Start Here ================ */
-.hero{
+.hero {
     position: relative;
 }
-.hero-container{
+
+.hero-container {
     text-align: center;
 }
-.hero-text-content{
+
+.hero-text-content {
     position: relative;
     margin: 5rem 0rem;
 }
-.hero-text-content span{
+
+.hero-text-content span {
     font-size: 1rem;
     margin: .5rem 0rem;
     display: block;
     font-weight: 500;
 }
-.hero-text-content h1.name{
+
+.hero-text-content h1.name {
     font-size: 2.2rem;
     color: var(--text-dark);
 }
-.hero-text-content .btn-group{
+
+.hero-text-content .btn-group {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -96,88 +108,176 @@ nav{
     position: relative;
     margin-top: 1.3rem;
 }
-.btn-group a{
+
+.btn-group a,
+.about-btn {
     padding: .7rem 1.3rem;
     background-color: var(--primary-color);
     color: var(--text-light);
     margin: .4rem;
     border-radius: 5px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
-.btn-group a:active{
+
+.btn-group a:active {
     transform: scale(0.98);
 }
-.btn-group a.download-btn{
+
+.btn-group a.download-btn {
     background-color: transparent;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
-.btn-group a.download-btn:hover{
+
+.btn-group a.download-btn:hover {
     background-color: var(--primary-color);
     color: var(--text-light);
 }
 
 /* hero image part  */
 
-.hero-image-content{
+.hero-image-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
-.social-btn-group{
+
+.social-btn-group {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     gap: .7rem;
 }
-.social-btn-group a{
+
+.social-btn-group a {
     width: 40px;
     height: 40px;
     text-align: center;
     line-height: 40px;
     font-size: 1.1rem;
     color: var(--text-dark);
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
-.social-btn-group .downline{
+
+.social-btn-group .downline {
     position: relative;
     width: 2px;
     height: 60px;
     background-color: var(--text-dark);
 }
-.hero-image{
+
+.hero-image {
     max-width: 280px;
     background: linear-gradient(var(--primary-color), transparent);
     padding-top: 2rem;
     border-radius: 154px 154px 14px 14px;
-    box-shadow: 0px 0px 14px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
     height: 400px;
     overflow: hidden;
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.hero-image img{
+
+.hero-image img {
     max-height: 100%;
 }
 
-.hero-scroll-down{
+.hero-scroll-down {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
 }
-.hero-scroll-down i{
+
+.hero-scroll-down i {
     font-size: 1.5rem;
     font-weight: 500;
 }
-.hero-scroll-down .horizontal-text{
+
+.hero-scroll-down .horizontal-text {
     writing-mode: vertical-lr;
     margin-top: .6rem;
     font-size: .9rem;
 }
 
 /*================ Hero Area End Here ================ */
+
+
+/*============ About me part start Here =================== */
+#about {
+    position: relative;
+    padding: 4rem 0rem;
+}
+.section-title{
+    text-align: center;
+    margin: 2rem auto;
+}
+.section-title h1{
+    color: var(--primary-color);
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 3rem 0rem;
+}
+
+.about-image {
+    max-width: 35%;
+    position: relative;
+}
+
+.about-image img {
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-text-content {
+    max-width: 50%;
+}
+.about-text-content .achievement{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    margin-bottom: 2rem;
+    position: relative;
+    grid-gap: 1rem;
+}
+.achievement .card{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.achievement i{
+    color: var(--primary-color);
+    font-size: 1.7rem;
+}
+.achievement span{
+    font-size: .9rem;
+    color: var(--text-dark);
+}
+
+.about-desc{
+    line-height: 1.7;
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin: 2rem 0rem;
+}
+.about-desc a{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.about-btn {
+    display: inline-block;
+    margin: 1rem 0rem;
+}
+
+/*============ About me part End Here =================== */
