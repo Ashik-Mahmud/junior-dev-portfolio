@@ -1,0 +1,28 @@
+/*================ style sheet ==================== */
+
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* site variables  */
+:root{
+    /* fonts collection  */
+    --poppins:'Poppins', sans-serif;
+}
+
+/* base  */
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--poppins);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
