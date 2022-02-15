@@ -8,25 +8,75 @@
     <title>Junior Developer Portfolio</title>
     <!-- link for favicon  -->
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- link for swiper css  -->
+    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
+    <!-- link for box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!-- link for stylesheet  -->
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 
 <body>
     <!-- header part start here  -->
-    <header id="header"></header>
+    <header id="header">
+        <!-- navbar  -->
+        <nav>
+            <div class="container navbar">
+                <a href="mailto:ashikmamud187@gmail.com" title="Ashik Mahmud" class="navbar__logo">Ashik</a>
+                <a href="#" class="toggle-theme-btn" title="Theme Toggler"><i class='bx bx-sun'></i></a>
+            </div>
+        </nav>
+        <!-- navbar end  -->
+        <!-- hero area start here  -->
+        <section class="hero">
+            <div class="hero-container container">
+                <!-- hero text  -->
+                <div class="hero-text-content">
+                    <span class="subtitle">Hi, I am</span>
+                    <h1 class="name">Ashik Mahmud</h1>
+                    <span class="designation">Junior Web Developer at Programming Hero</span>
+                    <div class="btn-group">
+                        <a href="#" class="download-btn"> Download CV</a>
+                        <a href="#" class="about-btn"> About Me</a>
+                    </div>
+                </div>
+                <!-- hero image part -->
+                <div class="hero-image-content">
+                    <div class="social-btn-group">
+                        <a href="#"><i class='bx bxl-github' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <span class="downline"></span>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./public/images/me.png" alt="profile image">
+                    </div>
+                    <div class="hero-scroll-down">
+                        <i class='bx bx-mouse'></i>
+                        <div class="horizontal-text">Scroll Down</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
     <!-- header part end here  -->
 
     <!-- main part start here  -->
-    <main id="main"><h1>Junior Developer Portfolio.</h1></main>
+    <main id="main"></main>
     <!-- main part end here  -->
 
     <!-- footer part start here  -->
-    <footer id="footer"><h1>Coming Soon</h1></footer>
+    <footer id="footer"></footer>
     <!-- footer part end here  -->
 
     <!-- link for scripting file  -->
     <script src="./public/js/app.js"></script>
+    <!-- link for mixitup  -->
+    <script src="./src/js/mixitup.min.js"></script>
+    <!-- link for swiper js  -->
+    <script src="./src/js/swiper-bundle.min.js"></script>
+    <!-- link for scroll reveal  -->
+    <script src="./src/js/scrollreveal.min.js"></script>
 </body>
 
 </html>
