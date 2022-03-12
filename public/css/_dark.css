@@ -17,8 +17,13 @@ html._dark .achievement .card {
 html._dark #menus ul {
   background: #8e89c7d3;
 }
-/* <!--  <li type="button" data-filter=".javascript">JavaScript</li>
-<li type="button" data-filter=".html-css">HTML&CSS</li>
-<li type="button" data-filter=".bootstrap">Bootstrap</li>
-<li type="button" data-filter=".tailwind">Tailwind</li>
-<li type="button" data-filter=".react">React</li> --> */
+html._dark #portfolios .card .info .technologies span {
+  background: var(--dark-body);
+}
+html._dark .portfolio-content .content .card {
+  background-color: var(--text-light);
+  border-color: var(--text-light);
+}
+html._dark #header.active-header {
+  background-color: #141414ed;
+}

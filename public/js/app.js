@@ -10,6 +10,7 @@ TODO:
 
 /* STEP: Select All important Elements using function */
 const elementById = name => document.getElementById(name);
+const htmlElement = document.querySelector("html");
 
 /*STEP: Set portfolios data from JavaScript file */
 const loadPortfolios = async () =>{
@@ -51,8 +52,6 @@ const displayPortfolios = (portfolios) =>{
 
 loadPortfolios();
 
-
-
 /* STEP: active when menus link clicked */
 const menuLinks = elementById("menus").querySelectorAll("li");
 menuLinks.forEach(link =>{
@@ -63,3 +62,39 @@ menuLinks.forEach(link =>{
     })
 })
 
+/* STEP: header fixed when user scrolling of this website */
+window.addEventListener("scroll", (event)=>{
+    let scrollHeight = event.path[1].scrollY;
+    (scrollHeight > 150)? elementById("header").classList.add("active-header") : elementById("header").classList.remove("active-header");
+})
+
+
+/* STEP: set toggle theme changer  */
+elementById("toggle-theme-btn").addEventListener("click", (event)=>{
+    htmlElement.classList.toggle("_dark");
+    let themeSlug = getTheme();
+    themeSlug = "_dark";
+    if(htmlElement.classList.contains("_dark")){
+        localStorage.setItem("theme", themeSlug);
+    }else{
+        localStorage.removeItem("theme");
+    }
+    setDarkMode()
+})
+const getTheme = () =>{
+    const themeClass = localStorage.getItem("theme");
+    let themeSlug = themeClass ? themeClass : '';
+    return themeSlug;
+}
+const setDarkMode = () => {
+        if(getTheme()) {
+            htmlElement.classList.add("_dark") 
+            elementById("toggle-theme-btn").querySelector("i").classList.remove("bx-moon");
+            elementById("toggle-theme-btn").querySelector("i").classList.add("bx-sun");
+         }else{
+            htmlElement.classList.remove("_dark");
+            elementById("toggle-theme-btn").querySelector("i").classList.add("bx-moon");
+            elementById("toggle-theme-btn").querySelector("i").classList.remove("bx-sun");
+         } 
+};
+setDarkMode();
