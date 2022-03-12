@@ -48,6 +48,8 @@ const displayPortfolios = (portfolios) =>{
     })
     // initialization mixitup 
     const mixer = mixitup(".portfolio-content"); 
+    sr.reveal('.card', { distance: '20px', scale: 0.9, origin: 'bottom', delay: 850 });
+
 }
 
 loadPortfolios();
@@ -98,3 +100,29 @@ const setDarkMode = () => {
          } 
 };
 setDarkMode();
+
+
+/* STEP: Scroll Reveal animation */
+window.sr = ScrollReveal();
+
+// animation for hero area 
+sr.reveal('.navbar__logo');
+sr.reveal('#toggle-theme-btn', { delay: 300 });
+sr.reveal('.subtitle', { delay: 500 });
+sr.reveal('.name', { delay: 600 });
+sr.reveal('.designation', { delay: 700 });
+sr.reveal('.btn-group', { delay: 850 });
+sr.reveal('.social-btn-group', { distance: '20px', origin: 'top', delay: 750 });
+sr.reveal('.hero-scroll-down', { distance: '20px', origin: 'top', delay: 750 });
+sr.reveal('.hero-image', { distance: '20px', scale: 0.5, origin: 'top', delay: 850 });
+
+// Animation for almost area 
+sr.reveal('.about-image', { distance: '20px', origin: 'left', delay: 850 });
+sr.reveal('.about-text-content', { distance: '20px', origin: 'right', delay: 850 });
+sr.reveal('.card', { distance: '20px', scale: 0.8, origin: 'bottom', delay: 850 });
+sr.reveal('.single-offer', { distance: '20px', scale: 0.9, origin: 'bottom', delay: 850 });
+sr.reveal('.filter-buttons', { distance: '10px', origin: 'bottom', delay: 650 });
+
+// animation menus 
+sr.reveal('#menus', { distance: '50px', origin: 'bottom', delay: 1000 });
+
