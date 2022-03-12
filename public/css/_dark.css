@@ -3,15 +3,15 @@ html._dark {
   /* colors  */
   --primary-color: #8e89c7;
   --text-dark: #f8f8f8;
-  --text-light: #333;
+  --text-light: #222222;
 }
 
 html._dark body {
-  background: #222;
+  background: #121212;
   color: #fff;
 }
 html._dark .achievement .card {
-  background: #333;
+  background: #222222;
 }
 html._dark #menus ul {
   background: #8e89c7d3;
