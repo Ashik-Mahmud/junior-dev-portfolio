@@ -4,14 +4,15 @@ html._dark {
   --primary-color: #8e89c7;
   --text-dark: #f8f8f8;
   --text-light: #222222;
+  --dark-body: #121212;
 }
 
 html._dark body {
-  background: #121212;
+  background: var(--dark-body);
   color: #fff;
 }
 html._dark .achievement .card {
-  background: #222222;
+  background: var(--text-light);
 }
 html._dark #menus ul {
   background: #8e89c7d3;
