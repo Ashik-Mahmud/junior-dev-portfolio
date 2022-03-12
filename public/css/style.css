@@ -96,6 +96,7 @@ img {
     rgba(175, 175, 219, 1) 47%
   );
   color: var(--text-light);
+  transition: all 0.4s ease;
 }
 /*================= Navbar Area Start Here ============== */
 nav {

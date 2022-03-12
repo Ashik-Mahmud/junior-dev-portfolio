@@ -46,10 +46,20 @@ const displayPortfolios = (portfolios) =>{
 
     })
     // initialization mixitup 
-    const mixer = mixitup(".portfolio-content");
-    
+    const mixer = mixitup(".portfolio-content"); 
 }
 
 loadPortfolios();
 
+
+
+/* STEP: active when menus link clicked */
+const menuLinks = elementById("menus").querySelectorAll("li");
+menuLinks.forEach(link =>{
+    link.addEventListener("click", ()=>{
+        menuLinks.forEach(link => link.classList.remove('active'));
+        link.classList.add('active');
+        link.querySelector('a').click();
+    })
+})
 
