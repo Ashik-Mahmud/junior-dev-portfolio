@@ -8,6 +8,7 @@ TODO:
 
 */
 
+
 /* STEP: Select All important Elements using function */
 const elementById = name => document.getElementById(name);
 const htmlElement = document.querySelector("html");
@@ -126,3 +127,6 @@ sr.reveal('.filter-buttons', { distance: '10px', origin: 'bottom', delay: 650 })
 // animation menus 
 sr.reveal('#menus', { distance: '50px', origin: 'bottom', delay: 1000 });
 
+
+/* STEP: gumshoe enabled */
+var spy = new Gumshoe("#menus a");
