@@ -8,7 +8,7 @@
   /* fonts collection  */
   --poppins: "Poppins", sans-serif;
   /* colors  */
-  --primary-color: #5b708b;
+  --primary-color: #8e89c7;
   --text-dark: #333;
   --text-light: #f8f8f8;
 }
@@ -82,7 +82,7 @@ img {
 }
 #menus li.active {
   position: relative;
-  background: rgb(113, 111, 145);
+  background: #716f91;
   background: linear-gradient(
     246deg,
     rgba(113, 111, 145, 1) 0%,
