@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "React Portfolios Starting",
+    "image": "https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg",
+    "tools": ["html-css", "react", "javascript"],
+    "liveUrl": "https://dev-ashikmahmud.netlify.app/#header",
+    "usingTools": ["html-css", "bootstrap", "plugin"],
+    "dependencies": ["html-css", "react"]
+  },
+  {
+    "id": 2,
+    "title": "Virtual Assistant for Chrome",
+    "image": "https://raw.githubusercontent.com/Ashik-Mahmud/virtual-assistant-js/main/preview.png",
+    "tools": ["html-css", "javascript"],
+    "liveUrl": "https://virtual-assistant-js.netlify.app/",
+    "usingTools": ["html-css", "icon", "javascript", "browser-api"],
+    "dependencies": ["html-css", "javascript"]
+  },
+  {
+    "id": 3,
+    "title": "Password Generator",
+    "image": "https://raw.githubusercontent.com/Ashik-Mahmud/password-generator/main/preview.png",
+    "tools": ["html-css", "javascript"],
+    "liveUrl": "https://advanced-password-generator.netlify.app/",
+    "usingTools": ["html-css", "dom", "javascript", "git"],
+    "dependencies": ["javascript"]
+  },
+  {
+    "id": 4,
+    "title": "Tailwind Portfolios",
+    "image": "https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg",
+    "tools": ["html-css", "tailwind"],
+    "liveUrl": "https://dev-ashikmahmud.netlify.app/#header",
+    "usingTools": ["html-css", "bootstrap", "javascript", "plugin"],
+    "dependencies": ["html-css", "tailwind"]
+  },
+  {
+    "id": 5,
+    "title": "Be Strong Gym Institute",
+    "image": "https://raw.githubusercontent.com/Ashik-Mahmud/gym-website/main/screenshot.png",
+    "tools": ["html-css", "javascript"],
+    "liveUrl": "https://ashik-mahmud.github.io/gym-website/",
+    "usingTools": ["html-css", "bootstrap", "javascript", "plugin"],
+    "dependencies": ["html-css", "javascript", "plugin"]
+  },
+  {
+    "id": 6,
+    "title": "QR Code System",
+    "image": "https://raw.githubusercontent.com/Ashik-Mahmud/qr-code-system/main/preview.png",
+    "tools": ["html-css", "bootstrap", "javascript"],
+    "liveUrl": "https://qr-code-creator-scanner.netlify.app/",
+    "usingTools": ["html-css", "bootstrap", "browser-api", "javascript"],
+    "dependencies": ["html-css", "bootstrap", "browser-api", "javascript"]
+  },
+  {
+    "id": 7,
+    "title": "Movie Search Application",
+    "image": "https://raw.githubusercontent.com/Ashik-Mahmud/movie-finder-app-react/main/preview.png",
+    "tools": ["html-css", "react", "javascript"],
+    "liveUrl": "",
+    "usingTools": ["html-css", "bootstrap", "api", "javascript"],
+    "dependencies": ["html-css", "react", "Api", "javascript"]
+  }
+]
