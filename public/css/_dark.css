@@ -1,0 +1,18 @@
+html._dark {
+  --poppins: "Poppins", sans-serif;
+  /* colors  */
+  --primary-color: #8e89c7;
+  --text-dark: #f8f8f8;
+  --text-light: #333;
+}
+
+html._dark body {
+  background: #222;
+  color: #fff;
+}
+html._dark .achievement .card {
+  background: #333;
+}
+html._dark #menus ul {
+  background: #8e89c7d3;
+}

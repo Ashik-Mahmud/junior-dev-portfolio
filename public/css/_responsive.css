@@ -1,0 +1,24 @@
+/* 
+TODO:
+- Responsive part here 
+-
+-
+*/
+
+/* Large Screen  */
+@media (max-width: 1170px) {
+}
+
+/* Medium Screen for  */
+@media (max-width: 968px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-image img {
+    width: 100%;
+  }
+}
+
+/* Tab & Mobile Devices  */
+@media (max-width: 668px) {
+}
