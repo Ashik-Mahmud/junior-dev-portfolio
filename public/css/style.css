@@ -335,3 +335,65 @@ nav {
   color: var(--text-dark);
 }
 /* =============Experiences part End here ================= */
+
+/* =============Offers part Start here ================= */
+#offer {
+  position: relative;
+  padding: 2rem 0rem;
+}
+#offer .offer-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0rem;
+  gap: 2rem;
+}
+.offer-content .single-offer {
+  position: relative;
+  background: var(--text-light);
+  padding: 3rem 1.5rem;
+  border-radius: 20px;
+  width: min(100%, 210px);
+  transition: transform 0.4s ease-in;
+  cursor: pointer;
+}
+.offer-content .single-offer:hover {
+  transform: scale(1.04);
+}
+.single-offer .icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.single-offer h3 {
+  margin: 1.4rem 0rem;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
+.single-offer button {
+  position: relative;
+  color: var(--primary-color);
+  background: transparent;
+  font-size: 1.01rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--poppins);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  transition: all 0.4s ease;
+  justify-content: center;
+}
+.single-offer button i {
+  display: block;
+  font-size: 1.3rem;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.single-offer button:hover i {
+  transform: translateX(5px);
+}
+
+/* =============Offers part End here ================= */
