@@ -41,7 +41,14 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+*::-webkit-scrollbar {
+  width: 6px;
+  background: var(--text-light);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 50px;
+}
 /*============== common classes ================ */
 .container {
   max-width: 1170px;
@@ -124,7 +131,20 @@ nav {
 .hero {
   position: relative;
 }
-
+.hero-image {
+  background: #716f91;
+  background: linear-gradient(
+    246deg,
+    rgba(113, 111, 145, 1) 0%,
+    rgba(175, 175, 219, 1) 47%
+  );
+  border-radius: 50%;
+  overflow: hidden;
+}
+.hero-image img {
+  position: relative;
+  top: 46px;
+}
 .hero-container {
   text-align: center;
 }
