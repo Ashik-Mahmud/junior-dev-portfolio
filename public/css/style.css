@@ -1,177 +1,174 @@
 /*================ style sheet ==================== */
 
 /*========= google fonts ========= */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 /*========== site variables =========== */
 :root {
-    /* fonts collection  */
-    --poppins: 'Poppins', sans-serif;
-    /* colors  */
-    --primary-color: #273c75;
-    --text-dark: #333;
-    --text-light: #f8f8f8;
+  /* fonts collection  */
+  --poppins: "Poppins", sans-serif;
+  /* colors  */
+  --primary-color: #5b708b;
+  --text-dark: #333;
+  --text-light: #f8f8f8;
 }
 
 /*============ base ============== */
 *,
 *::after,
 *::before {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 body {
-    font-family: var(--poppins);
-    font-size: 16px;
+  font-family: var(--poppins);
+  font-size: 16px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /*============== common classes ================ */
 .container {
-    max-width: 1170px;
-    margin: auto;
+  max-width: 1170px;
+  margin: auto;
 }
-
-
-
 
 /*================= Navbar Area Start Here ============== */
 nav {
-    position: relative;
-    padding: 1.5rem 0rem;
+  position: relative;
+  padding: 1.5rem 0rem;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 .navbar .navbar__logo {
-    font-size: 1.3rem;
-    color: var(--primary-color);
+  font-size: 1.3rem;
+  color: var(--primary-color);
 }
 
 .navbar .toggle-theme-btn {
-    font-size: 1.4rem;
-    color: var(--primary-color);
+  font-size: 1.4rem;
+  color: var(--primary-color);
 }
 
 /*================= Navbar Area End Here ============== */
 
 /*================ Hero Area Start Here ================ */
 .hero {
-    position: relative;
+  position: relative;
 }
 
 .hero-container {
-    text-align: center;
+  text-align: center;
 }
 
 .hero-text-content {
-    position: relative;
-    margin: 6rem 0rem;
+  position: relative;
+  margin: 6rem 0rem;
 }
 
 .hero-text-content span {
-    font-size: 1rem;
-    margin: .5rem 0rem;
-    display: block;
-    font-weight: 500;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+  display: block;
+  font-weight: 500;
 }
 
 .hero-text-content h1.name {
-    font-size: 2.2rem;
-    color: var(--text-dark);
+  font-size: 2.2rem;
+  color: var(--text-dark);
 }
 
 .hero-text-content .btn-group {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    margin-top: 1.3rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin-top: 1.3rem;
 }
 
 .btn-group a,
 .about-btn {
-    padding: .7rem 1.3rem;
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    margin: .4rem;
-    border-radius: 5px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+  padding: 0.7rem 1.3rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  margin: 0.4rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .btn-group a:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .btn-group a.download-btn {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .btn-group a.download-btn:hover {
-    background-color: var(--primary-color);
-    color: var(--text-light);
+  background-color: var(--primary-color);
+  color: var(--text-light);
 }
 
 /* hero image part  */
 
 .hero-image-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 .social-btn-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    gap: .7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 0.7rem;
 }
 
 .social-btn-group a {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 1.1rem;
-    color: var(--text-dark);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .social-btn-group .downline {
-    position: relative;
-    width: 2px;
-    height: 60px;
-    background-color: var(--text-dark);
+  position: relative;
+  width: 2px;
+  height: 60px;
+  background-color: var(--text-dark);
 }
 
-.hero-image {
+/* .hero-image {
     max-width: 250px;
     padding-top: 2rem;
     border-radius: 154px 154px 14px 14px;
@@ -180,108 +177,161 @@ nav {
     overflow: hidden;
     padding-left: 2rem;
     padding-right: 2rem;
-}
+} */
 
 .hero-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .hero-scroll-down {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    color: var(--primary-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
 .hero-scroll-down i {
-    font-size: 1.5rem;
-    font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .hero-scroll-down .horizontal-text {
-    writing-mode: vertical-lr;
-    margin-top: .6rem;
-    font-size: .9rem;
+  writing-mode: vertical-lr;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
 }
 
 /*================ Hero Area End Here ================ */
 
-
 /*============ About me part start Here =================== */
 #about {
-    position: relative;
-    padding: 5rem 0rem;
+  position: relative;
+  padding: 5rem 0rem;
 }
-.section-title{
-    text-align: center;
-    margin: 2rem auto;
+.section-title {
+  text-align: center;
+  margin: 2rem auto;
 }
-.section-title h1{
-    color: var(--primary-color);
+.section-title h1 {
+  color: var(--primary-color);
 }
 .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
-    padding: 3rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 3rem 0rem;
 }
 
 .about-image {
-    max-width: 35%;
-    position: relative;
+  max-width: 35%;
+  position: relative;
 }
 
 .about-image img {
-    max-height: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .about-text-content {
-    max-width: 50%;
+  max-width: 50%;
 }
-.about-text-content .achievement{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    margin-bottom: 2rem;
-    position: relative;
-    grid-gap: 1rem;
+.about-text-content .achievement {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  margin-bottom: 2rem;
+  position: relative;
+  grid-gap: 1rem;
 }
-.achievement .card{
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    text-align: center;
-    border-radius: 8px;
-    cursor: pointer;
+.achievement .card {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
 }
-.achievement i{
-    color: var(--primary-color);
-    font-size: 1.7rem;
+.achievement i {
+  color: var(--primary-color);
+  font-size: 1.7rem;
 }
-.achievement span{
-    font-size: .9rem;
-    color: var(--text-dark);
+.achievement span {
+  font-size: 0.9rem;
+  color: var(--text-dark);
 }
 
-.about-desc{
-    line-height: 1.7;
-    font-size: 1rem;
-    color: var(--text-dark);
-    margin: 2rem 0rem;
+.about-desc {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin: 2rem 0rem;
 }
-.about-desc a{
-    color: var(--primary-color);
-    font-weight: bold;
+.about-desc a {
+  color: var(--primary-color);
+  font-weight: bold;
 }
 .about-btn {
-    display: inline-block;
-    margin: 1rem 0rem;
+  display: inline-block;
+  margin: 1rem 0rem;
 }
 
 /*============ About me part End Here =================== */
+
+/* =============Experiences part start here ================= */
+#experiences {
+  position: relative;
+  padding: 2rem 0rem;
+}
+.experiences-content {
+  padding: 1rem 0rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 1rem;
+}
+
+.experiences-content .card {
+  position: relative;
+  background: var(--text-light);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.experiences-content .card h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 1.3rem;
+  margin-top: 1rem;
+}
+.experiences-content .card ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 1.5rem;
+}
+.experiences-content ul li {
+  display: flex;
+  align-items: flex-start;
+}
+.experiences-content li .icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+.experiences-content li .info {
+  margin-left: 0.6rem;
+}
+.experiences-content .info h4 {
+  font-size: 0.9rem;
+}
+.experiences-content .info span {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+/* =============Experiences part End here ================= */
