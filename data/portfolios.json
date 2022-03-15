@@ -61,5 +61,14 @@
     "liveUrl": "",
     "usingTools": ["html-css", "bootstrap", "api", "javascript"],
     "dependencies": ["html-css", "react", "Api", "javascript"]
+  },
+  {
+    "id": 8,
+    "title": "Country Search App",
+    "image": "https://raw.githubusercontent.com/Ashik-Mahmud/react-countries-app/main/preview.png",
+    "tools": ["react", "javascript"],
+    "liveUrl": "https://react-countries-application.netlify.app/",
+    "usingTools": ["react", "react-router", "style-components", "api"],
+    "dependencies": ["react", "javascript", "Api", "javascript"]
   }
 ]
