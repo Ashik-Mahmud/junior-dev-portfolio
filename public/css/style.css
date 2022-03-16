@@ -562,4 +562,14 @@ nav {
   align-items: center;
   gap: 0.5rem;
 }
+#portfolios .show-all-btn {
+  text-align: right;
+}
+.show-all-btn a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  color: var(--primary-color);
+}
 /* =============Portfolios part End here ================= */

@@ -57,18 +57,27 @@
     "id": 7,
     "title": "Movie Search Application",
     "image": "https://raw.githubusercontent.com/Ashik-Mahmud/movie-finder-app-react/main/preview.png",
-    "tools": ["html-css", "react", "javascript"],
+    "tools": ["html-css", "api", "react", "javascript"],
     "liveUrl": "",
     "usingTools": ["html-css", "bootstrap", "api", "javascript"],
-    "dependencies": ["html-css", "react", "Api", "javascript"]
+    "dependencies": ["html-css", "react", "api", "javascript"]
   },
   {
     "id": 8,
     "title": "Country Search App",
     "image": "https://raw.githubusercontent.com/Ashik-Mahmud/react-countries-app/main/preview.png",
-    "tools": ["react", "javascript"],
+    "tools": ["react", "javascript", "api"],
     "liveUrl": "https://react-countries-application.netlify.app/",
     "usingTools": ["react", "react-router", "style-components", "api"],
-    "dependencies": ["react", "javascript", "Api", "javascript"]
+    "dependencies": ["react", "javascript", "api"]
+  },
+  {
+    "id": 9,
+    "title": "Food Finder App",
+    "image": "https://raw.githubusercontent.com/Ashik-Mahmud/react-mealdb-food/main/preview.png",
+    "tools": ["react", "javascript", "api"],
+    "liveUrl": "https://react-food-finder.netlify.app/",
+    "usingTools": ["react", "react-spring", "style-components", "api"],
+    "dependencies": ["react", "javascript", "api"]
   }
 ]
