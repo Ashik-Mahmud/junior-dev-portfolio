@@ -142,18 +142,19 @@ nav {
   position: relative;
 }
 .hero-image {
-  background: #716f91;
-  background: linear-gradient(
+  /* background: #716f91;
+   background: linear-gradient(
     246deg,
     rgba(113, 111, 145, 1) 0%,
     rgba(175, 175, 219, 1) 47%
   );
-  border-radius: 50%;
+  border-radius: 50%; */
+  border-radius: 30px;
   overflow: hidden;
 }
 .hero-image img {
   position: relative;
-  top: 46px;
+  /* top: 46px; */
 }
 .hero-container {
   text-align: center;
@@ -317,7 +318,7 @@ nav {
   width: min(100%, 80%);
   max-height: 100%;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); */
 }
 
 .about-text-content .achievement {
