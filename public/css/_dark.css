@@ -28,7 +28,10 @@ html._dark #header.active-header {
   background-color: #1d293acb;
   backdrop-filter: blur(5px);
 }
-
+html._dark .contact-content .right-content {
+  background-color: var(--dark-body);
+  border-color: var(--text-light);
+}
 html._dark .right-content input,
 html._dark .right-content textarea {
   color: #fff;

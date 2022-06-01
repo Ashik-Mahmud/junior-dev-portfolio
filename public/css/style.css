@@ -596,15 +596,41 @@ nav {
 .contact-content {
   margin: 4rem 0rem;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   position: relative;
+  flex-wrap: wrap;
 }
 .contact-content .left-content {
+  box-sizing: border-box;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.left-content .card {
+  padding: 2rem;
+  position: relative;
+  box-sizing: border-box;
+  background-color: var(--text-light);
+  flex: 1;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.left-content .card a {
+  color: var(--text-dark);
 }
 .contact-content .right-content {
   flex: 1;
+  background-color: #fff;
+  padding: 2rem;
+  margin-left: -5rem;
+  z-index: 1;
+  border-radius: 5px;
 }
 .right-content input,
 .right-content textarea {

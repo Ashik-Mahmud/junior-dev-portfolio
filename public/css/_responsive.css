@@ -21,4 +21,8 @@ TODO:
 
 /* Tab & Mobile Devices  */
 @media (max-width: 668px) {
+  .contact-content .right-content {
+    margin-left: 0px;
+    padding: 0;
+  }
 }
