@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="./public/css/style.css" />
     <link rel="stylesheet" href="./public/css/_dark.css" />
     <link rel="stylesheet" href="./public/css/_responsive.css" />
-    <!-- Particle js  -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </head>
 
   <body>
@@ -558,16 +556,17 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <!-- script for gumshoe  -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe/dist/gumshoe.polyfills.min.js"></script>
-
+    <!-- Particle js  -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <!-- link for scripting file  -->
     <script src="./public/js/app.js"></script>
-
     <script>
       /* STEP: Config Particle JS*/
       particlesJS("particles-js", {
         particles: {
           number: { value: 160, density: { enable: true, value_area: 800 } },
-          color: { value: "#8e89c7" },
+          color: { value: "#ffffff" },
           shape: {
             type: "circle",
             stroke: { width: 0, color: "#000000" },
@@ -625,6 +624,27 @@
         },
         retina_detect: true,
       });
+      var count_particles, stats, update;
+      stats = new Stats();
+      stats.setMode(0);
+      stats.domElement.style.position = "absolute";
+      stats.domElement.style.left = "0px";
+      stats.domElement.style.top = "0px";
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector(".js-count-particles");
+      update = function () {
+        stats.begin();
+        stats.end();
+        if (
+          window.pJSDom[0].pJS.particles &&
+          window.pJSDom[0].pJS.particles.array
+        ) {
+          count_particles.innerText =
+            window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
     </script>
   </body>
 </html>
