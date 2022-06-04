@@ -203,6 +203,7 @@ nav {
   background-color: var(--primary-color);
   color: var(--text-light);
   margin: 0.4rem;
+  display: inline-block;
   border-radius: 5px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -370,7 +371,7 @@ nav {
 }
 .about-btn {
   display: inline-block;
-  margin: 1rem 0rem;
+  margin: 1rem 0.5rem;
 }
 
 /*============ About me part End Here =================== */
