@@ -133,6 +133,8 @@ var spy = new Gumshoe("#menus a");
 
 
 /* STEP: Config Particle JS*/
+
+window.addEventListener('DOMContentLoaded', (event) => {
 particlesJS("particles-js", {
     particles: {
       number: { value: 160, density: { enable: true, value_area: 800 } },
@@ -215,3 +217,4 @@ particlesJS("particles-js", {
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
+});
