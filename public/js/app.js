@@ -41,7 +41,10 @@ const displayPortfolios = (portfolios) =>{
                                 <h3>${portfolio.title}</h3>
                                 <div class="technologies">${tools}</div>
                                 <div class="btns-group">
-                                    <a target="_blank" href="${portfolio.liveUrl ? portfolio.liveUrl : `https://dev-ashikmahmud.netlify.app/#portfolios`}"><i class="bx bx-link-alt"></i> Live Preview</a>
+                                    ${portfolio.liveUrl ? `<a target="_blank" href="${portfolio.liveUrl}"><i class="bx bx-link-alt"></i> Live</a>` : ``}
+                                    ${portfolio.codeUrl ? `<a target="_blank" href="${portfolio.codeUrl}"><i class="bx bx-link-alt"></i> Code</a>` : ``}
+                                    ${portfolio.serverCode ? `<a target="_blank" href="${portfolio.serverCode}"><i class="bx bx-link-alt"></i> Server</a>` : ``}
+                                    
                                 </div>
                                 </div>
                             </div>`;
