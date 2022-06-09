@@ -100,6 +100,16 @@
     "dependencies": ["javascript", "react"]
   },
   {
+    "id": 20,
+    "title": "Guitar Shop",
+    "image": "https://raw.githubusercontent.com/Ashik-Mahmud/react-guiter-shop-app/main/preview.png",
+    "tools": ["react", "javascript"],
+    "liveUrl": "https://react-guitar-shop.netlify.app/",
+    "codeUrl": "https://github.com/Ashik-Mahmud/react-guiter-shop-app",
+    "usingTools": ["react", "javascript", "firebase", "react-router"],
+    "dependencies": ["javascript", "react"]
+  },
+  {
     "id": 2,
     "title": "Virtual Assistant for Chrome",
     "image": "https://raw.githubusercontent.com/Ashik-Mahmud/virtual-assistant-js/main/preview.png",
@@ -140,6 +150,7 @@
     "usingTools": ["html-css", "bootstrap", "browser-api", "javascript"],
     "dependencies": ["html-css", "bootstrap", "browser-api", "javascript"]
   },
+
   {
     "id": 6,
     "title": "QR Code System",
